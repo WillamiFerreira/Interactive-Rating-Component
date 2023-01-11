@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,25 +9,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hating page</title>
 </head>
+
 <body>
-    <div class="countainer">
+    <div class="container">
         <div class="main">
-            </div>
-            <img src="imagens/illustration-thank-you.svg" alt="" class="thanks-img" style="display: none;">
-            <div class="ratingMsg" style="display: none;"></div>
-            <h1>How did we do?</h1>
-            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering! </p>
+            <div class="up_star opcao"><img src="imagens/icon-star.svg" alt=""></div>
+            <img src="imagens/illustration-thank-you.svg" alt="thanks illustration" class="thanks_img"
+                style="display: none;">
+            <div id="rating_msg" style="display: none;"></div>
+            <h1 id="title">How did we do?</h1>
+            <p id="paragraph">Please let us know how we did with your support request. All feedback is
+                appreciated to help us improve our
+                offering! </p>
             <span>
-                <input type="button" value="1" class="staricon" onclick="getRate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
-                <input type="button" value="2" class="staricon" onclick="getRate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
-                <input type="button" value="3" class="staricon" onclick="getRate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
-                <input type="button" value="4" class="staricon" onclick="getRate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
-                <input type="button" value="5" class="staricon" onclick="getRate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
+
+                <div class="opcao" id="0" onmouseenter="mouseEntrou(this)" onmouseleave="mouseSaiu(this)"
+                    onmousedown="clicou(this)" onclick="getRate(1)">1</div>
+                <div class="opcao" id="1" onmouseenter="mouseEntrou(this)" onmouseleave="mouseSaiu(this)"
+                    onmousedown="clicou(this)" onclick="getRate(2)">2</div>
+                <div class="opcao" id="2" onmouseenter="mouseEntrou(this)" onmouseleave="mouseSaiu(this)"
+                    onmousedown="clicou(this)" onclick="getRate(3)">3</div>
+                <div class="opcao" id="3" onmouseenter="mouseEntrou(this)" onmouseleave="mouseSaiu(this)"
+                    onmousedown="clicou(this)" onclick="getRate(4)">4</div>
+                <div class="opcao" id="4" onmouseenter="mouseEntrou(this)" onmouseleave="mouseSaiu(this)"
+                    onmousedown="clicou(this)" onclick="getRate(5)">5</div>
             </span>
-            <button id="submit"">submit</button>
+            <button id="submit">Submit</button>
         </div>
     </div>
     
     <script src="script.js"></script>
 </body>
+
 </html>
