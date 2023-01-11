@@ -45,6 +45,26 @@ p{
     background-color: var(--Dark-Blue);
     border-radius: 20px;
     padding: 25px;
+    
+}
+.thanks-img{
+    width: 145.5px;
+    
+}
+.thanks_page{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.ratingMsg{
+    margin: auto;
+    line-height: 35px;
+    font-size: 14px;
+    width: 192px;
+    height: 34px;
+    border-radius: 16px;
+    color: #fb7413;
+    background-color: #272E36;
 }
 span{
     display: flex;

@@ -11,23 +11,22 @@
 <body>
     <div class="countainer">
         <div class="main">
-            <div>
-                <div class="staricon up-star">
+            <div class="staricon up-star estrela">
                     <img src="imagens/icon-star.svg" alt="icon-star">
-                </div>
-                <div id="img-countainer"></div>
-                <h1>How did we do?</h1>
-                <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering! </p>
-                <span>
-                    <input type="button" value="1" class="staricon" onclick="gethate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
-                    <input type="button" value="2" class="staricon" onclick="gethate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
-                    <input type="button" value="3" class="staricon" onclick="gethate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
-                    <input type="button" value="4" class="staricon" onclick="gethate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
-                    <input type="button" value="5" class="staricon" onclick="gethate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
-                </span>
-                <button id="submit" onclick="cleamHatePage(), funcao()">submit</button>
-                        </div>
             </div>
+            <img src="imagens/illustration-thank-you.svg" alt="" class="thanks-img" style="display: none;">
+            <div class="ratingMsg" style="display: none;"></div>
+            <h1>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering! </p>
+            <span>
+                <input type="button" value="1" class="staricon" onclick="getRate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
+                <input type="button" value="2" class="staricon" onclick="getRate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
+                <input type="button" value="3" class="staricon" onclick="getRate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
+                <input type="button" value="4" class="staricon" onclick="getRate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
+                <input type="button" value="5" class="staricon" onclick="getRate(this)" onmouseenter="mouseOnCircle(this)" onmouseleave="mouseOutCircle(this)" onmousedown="mouseDownCircle(this)" onmouseup="mouseUpCircle(this)"></input>
+            </span>
+            <button id="submit"">submit</button>
+        </div>
     </div>
     
     <script src="script.js"></script>
