@@ -56,11 +56,8 @@ p{
     flex-direction: column;
     text-align: center;
 }
-<<<<<<< HEAD
-.ratingMsg{
-=======
-.hating-msg{
->>>>>>> 5e1743772b57327991417262c618844d6c9d4cdc
+
+.ratingmMsg{
     margin: auto;
     line-height: 35px;
     font-size: 14px;
