@@ -39,18 +39,18 @@ btn.addEventListener('click', function (event) {
     btn.style.display = "none";
     img.classList.add('thanks_img');
     main.classList.add('thanks_page');
-    
+
 });
 
 function mouseEntrou(op) {
     if (op.style.backgroundColor != "hsl(25, 97%, 53%)") {
-        op.style.backgroundColor = "hsl(216, 12%, 54%)"; //cinza claro
+        op.style.backgroundColor = "hsl(216, 12%, 54%)";
         op.style.color = 'hsl(0, 0%, 100%)'
     }
 }
 
 function mouseSaiu(op) {
-    if (op.style.backgroundColor != 'hsl(25, 97%, 53%)') { //orange
+    if (op.style.backgroundColor != 'hsl(25, 97%, 53%)') {
         op.style.backgroundColor = "hsl(210, 19%, 18%)";
         op.style.color = 'hsl(217, 12%, 63%)';
 
@@ -62,8 +62,8 @@ function mouseSaiu(op) {
 function clicou(op) {
     for (let i in options) {
         var item = document.getElementById(i)
-        if (item.style.backgroundColor == 'hsl(25, 97%, 53%)') { //orange
-            item.style.backgroundColor = 'hsl(210, 19%, 18%)'; //normal
+        if (item.style.backgroundColor == 'hsl(25, 97%, 53%)') {
+            item.style.backgroundColor = 'hsl(210, 19%, 18%)'; 
         }
     }
 
