@@ -1,22 +1,22 @@
-let nota = 0
 let main = document.getElementsByClassName('main')[0];
-let estrela = document.getElementsByClassName('estrela')[0];
+let estrela = document.getElementById('estrela');
 let titulo = document.getElementsByTagName('h1')[0];
-let thanksImg = document.getElementsByClassName('thanks-img')[0]
+let thanks_img = document.getElementsByClassName('thanks-img')[0]
 let paragrafo = document.getElementsByTagName('p')[0]
 let span = document.getElementsByTagName('span')[0];
 let botao = window.document.getElementById("submit");
-let notaMsg = document.getElementsByClassName("ratingMsg")[0];
+let notaMsg = document.getElementsByClassName("hating-msg")[0];
+let nota = 0
 
-botao.addEventListener("mouseup", submit);
-botao.addEventListener("mousedown", botaoDown);
+botao.addEventListener("mousedown", submit);
+botao.addEventListener("mouseup", botaoSai);
 
-function getRate(valor){
+function gethate(valor){
     nota = valor.value
-
 };
 
 function submit(){
+
     botao.style.backgroundColor = 'white';
     botao.style.color = '#fb7413';
     estrela.style.display = 'none';
@@ -34,6 +34,16 @@ function submit(){
 function botaoDown(){
     botao.style.backgroundColor = 'white';
     botao.style.color = '#fb7413';
+    thanks_img.style.display = "block";
+    notaMsg.style.display='block';
+    notaMsg.innerHTML = `You selected ${nota} out of 5`;
+    thanks_img.style.margin = "auto";
+    main.classList.add('thanks_page');
+};
+
+function botaoSai(){
+    botao.style.backgroundColor = '#fb7413';
+    botao.style.color = 'white';
 };
 
 function mouseOnCircle(opcao){
